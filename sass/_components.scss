@@ -4,9 +4,59 @@
 header {
   display:flex;
   justify-content: center;
-  // margin-top: 48px;
   padding-top: 48px;
 }
 
-  
-  
+/*----------------------------
+ section hero
+----------------------------*/
+
+.hero {
+  // background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  margin-top: 54px;
+
+  & img {
+    width: 110.4%;
+  }
+
+  &__text {
+    // background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 48px;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px ;
+  }
+
+  &__heading {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 44px;
+    text-align: center;
+    color: $black;
+    max-width: 290px;
+    text-align: center;
+
+  }
+
+  &__paragraph {
+    line-height: 26px;
+    text-align: center;
+    margin-top: 24px;
+  }
+
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}

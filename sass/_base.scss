@@ -13,6 +13,13 @@ body {
   font-weight: medium;
 }
 
+
+// layout
 .page-wrapper {
-  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content{
+  max-width: 100%;
 }
