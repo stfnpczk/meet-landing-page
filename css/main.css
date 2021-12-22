@@ -379,7 +379,7 @@ body {
 }
 
 /*----------------------------
- section header
+ header section
 ----------------------------*/
 header {
   display: -webkit-box;
@@ -392,7 +392,7 @@ header {
 }
 
 /*----------------------------
- section hero
+hero section
 ----------------------------*/
 .hero {
   display: -webkit-box;
@@ -494,4 +494,50 @@ header {
 
 .hero__button--what-is-it:hover {
   background-color: #b18ddd;
+}
+
+/*----------------------------
+transiton section
+----------------------------*/
+.transition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 64px;
+}
+
+.transition__line {
+  width: 1px;
+  height: 84px;
+  background-color: rgba(134, 134, 156, 0.25);
+}
+
+.transition__circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid rgba(134, 134, 156, 0.25);
+  width: 56px;
+  height: 3.5rem;
+  border-radius: 29px;
+  background-color: white;
+}
+
+.transition__number {
+  font-weight: 900;
+  line-height: 26px;
+  color: #86869c;
 }

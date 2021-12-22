@@ -1,5 +1,5 @@
 /*----------------------------
- section header
+ header section
 ----------------------------*/
 header {
   display: flex;
@@ -8,7 +8,7 @@ header {
 }
 
 /*----------------------------
- section hero
+hero section
 ----------------------------*/
 
 .hero {
@@ -90,5 +90,42 @@ header {
     &:hover {
       background-color: hsla(267, 54%, 71%, 1);
     }
+  }
+}
+
+/*----------------------------
+transiton section
+----------------------------*/
+.transition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 64px;
+
+  &__line {
+    width: 1px;
+    height: 84px;
+    background-color: hsla(240, 10%, 57%, 0.25);
+    // opacity: 0.25;
+  }
+
+  &__circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid hsla(240, 10%, 57%, 0.25);
+    width: 56px;
+    height: 3.5rem;
+    border-radius: 29px;
+    background-color: white;
+  }
+
+  
+
+  &__number {
+    
+    font-weight: 900;
+    line-height: 26px;
+    color: $gray;
   }
 }
