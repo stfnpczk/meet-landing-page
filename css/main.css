@@ -439,13 +439,13 @@ header {
   text-align: center;
   color: #28283e;
   max-width: 290px;
-  text-align: center;
 }
 
 .hero__paragraph {
   line-height: 26px;
   text-align: center;
   margin-top: 24px;
+  color: #86869c;
 }
 
 .hero__buttons {
@@ -459,4 +459,39 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 32px;
+}
+
+.hero__button {
+  color: #fafafa;
+  font-weight: 900;
+  line-height: 26px;
+  border-radius: 29px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.hero__button--download {
+  background-color: #4d96a8;
+  padding: 16px 40px;
+  margin-bottom: 17px;
+}
+
+.hero__button--download span {
+  color: #90e4f9;
+}
+
+.hero__button--download:hover {
+  background-color: #72c1d5;
+}
+
+.hero__button--what-is-it {
+  background-color: 267, 34%, 53%, 1;
+  background-color: #845eb0;
+  padding: 16px 29px;
+}
+
+.hero__button--what-is-it:hover {
+  background-color: #b18ddd;
 }
