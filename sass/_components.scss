@@ -55,6 +55,7 @@ hero section
     flex-direction: column;
     align-items: center;
     margin-top: 32px;
+    margin-bottom:64px; 
   }
 
   &__button {
@@ -100,7 +101,6 @@ transiton section
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 64px;
 
   &__line {
     width: 1px;
@@ -125,7 +125,12 @@ transiton section
     line-height: 26px;
     color: $gray;
   }
+
 }
+
+// .transition--two {
+
+// }
 
 /*----------------------------
 features section

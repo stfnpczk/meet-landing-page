@@ -460,6 +460,7 @@ hero section
       -ms-flex-align: center;
           align-items: center;
   margin-top: 32px;
+  margin-bottom: 64px;
 }
 
 .hero__button {
@@ -510,7 +511,6 @@ transiton section
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 64px;
 }
 
 .transition__line {
