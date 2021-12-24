@@ -55,7 +55,7 @@ hero section
     flex-direction: column;
     align-items: center;
     margin-top: 32px;
-    margin-bottom:64px; 
+    margin-bottom: 64px;
   }
 
   &__button {
@@ -75,7 +75,7 @@ hero section
     margin-bottom: 17px;
 
     span {
-      color: hsla(192, 90%, 77%, 1);
+      color: $cyan;
     }
 
     &:hover {
@@ -84,7 +84,6 @@ hero section
   }
 
   &__button--what-is-it {
-    background-color: (267, 34%, 53%, 1);
     background-color: $dark-purple;
     padding: 16px 29px;
 
@@ -125,7 +124,6 @@ transiton section
     line-height: 26px;
     color: $gray;
   }
-
 }
 
 // .transition--two {
@@ -181,6 +179,46 @@ features section
       color: $gray;
       line-height: 26px;
       margin-top: 32px;
+    }
+  }
+}
+
+/*----------------------------
+footer section
+----------------------------*/
+
+.footer {
+  margin-top: -2rem;
+  background-image: linear-gradient($teal-transparent, $teal-transparent),
+    url("../assets/mobile/image-footer.jpg");
+  background-size: cover;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $white;
+    text-align: center;
+    padding: 92px 24px 72px;
+  }
+
+  &__heading {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 36px;
+  }
+
+  &__paragraph {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 24px;
+  }
+
+  &__button {
+    margin-top: 32px;
+
+    span {
+      color: $light-purple;
     }
   }
 }

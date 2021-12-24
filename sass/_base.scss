@@ -1,5 +1,6 @@
 // color variables
 $teal: hsl(192, 37%, 48%);
+$teal-transparent: hsla(192, 37%, 48%, 0.9);
 $cyan: hsl(192, 90%, 77%);
 $dark-purple: hsl(268, 34%, 53%);
 $light-purple: hsl(268, 100%, 86%);
@@ -13,13 +14,12 @@ body {
   font-weight: medium;
 }
 
-
 // layout
 .page-wrapper {
   display: flex;
   justify-content: center;
 }
 
-.content{
+.content {
   max-width: 100%;
 }

@@ -488,7 +488,6 @@ hero section
 }
 
 .hero__button--what-is-it {
-  background-color: 267, 34%, 53%, 1;
   background-color: #845eb0;
   padding: 16px 29px;
 }
@@ -608,4 +607,50 @@ features section
   color: #86869c;
   line-height: 26px;
   margin-top: 32px;
+}
+
+/*----------------------------
+footer section
+----------------------------*/
+.footer {
+  margin-top: -2rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(77, 150, 168, 0.9)), to(rgba(77, 150, 168, 0.9))), url("../assets/mobile/image-footer.jpg");
+  background-image: linear-gradient(rgba(77, 150, 168, 0.9), rgba(77, 150, 168, 0.9)), url("../assets/mobile/image-footer.jpg");
+  background-size: cover;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fafafa;
+  text-align: center;
+  padding: 92px 24px 72px;
+}
+
+.footer__heading {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 36px;
+}
+
+.footer__paragraph {
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 24px;
+}
+
+.footer__button {
+  margin-top: 32px;
+}
+
+.footer__button span {
+  color: #d9b8ff;
 }
