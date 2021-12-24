@@ -4,7 +4,7 @@
 header {
   display: flex;
   justify-content: center;
-  padding-top: 48px;
+  margin-top: 48px;
 }
 
 /*----------------------------
@@ -20,18 +20,23 @@ hero section
   overflow-x: hidden;
   margin-top: 54px;
 
+  @media only screen and (min-width: 768px) {
+    margin-top: 64px;
+  }
+
   & img {
-    width: 110.4%;
+    max-width: 110.4%;
   }
 
   &__text {
     display: flex;
     flex-direction: column;
-
-    margin-top: 48px;
+    margin: 48px 24px 0 24px;
     align-items: center;
-    padding-left: 24px;
-    padding-right: 24px;
+
+    @media only screen and (min-width: 768px) {
+      margin-top: 72px;
+    }
   }
 
   &__heading {
@@ -41,6 +46,12 @@ hero section
     text-align: center;
     color: $black;
     max-width: 290px;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 48px;
+      line-height: 48px;
+      max-width: 339px;
+    }
   }
 
   &__paragraph {
@@ -48,17 +59,27 @@ hero section
     text-align: center;
     margin-top: 24px;
     color: $gray;
+
+    @media only screen and (min-width: 768px) {
+      max-width: 457px;
+      margin-top: 24px;
+    }
   }
 
   &__buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 32px;
-    margin-bottom: 64px;
+    margin: 32px 0 64px;
+
+    @media only screen and (min-width: 768px) {
+      flex-direction: row;
+      margin: 32px 0 80px;
+    }
   }
 
   &__button {
+    font-family: 'Red Hat Display', sans-serif;
     color: $white;
     font-weight: 900;
     line-height: 26px;
@@ -66,20 +87,23 @@ hero section
     border: none;
     cursor: pointer;
     text-align: center;
-    // max-width: 193px;
   }
 
   &__button--download {
     background-color: $teal;
-    padding: 16px 40px;
+    padding: 17px 40px 15px;
     margin-bottom: 17px;
 
     span {
       color: $cyan;
+      padding-left: 4px;
     }
 
     &:hover {
       background-color: hsla(192, 54%, 64%, 1);
+    }
+    @media only screen and (min-width: 768px) {
+      margin: 0 16px 0 0;
     }
   }
 
@@ -114,7 +138,7 @@ transiton section
     justify-content: center;
     border: 1px solid hsla(240, 10%, 57%, 0.25);
     width: 56px;
-    height: 3.5rem;
+    height: 56px;
     border-radius: 29px;
     background-color: white;
   }
@@ -138,18 +162,29 @@ features section
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 64px 24px;
+  margin: 64px 24px;
+
+  @media only screen and (min-width: 768px) {
+    margin: 67px 40px 80px 39px; 
+  }
 
   .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
 
+    @media only screen and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 11px;
+    }
+
     &__image {
       max-width: 100%;
       max-height: 100%;
       border-radius: 16px;
     }
+
+
   }
 
   .text {
@@ -158,6 +193,10 @@ features section
     align-items: center;
     text-align: center;
     margin-top: 64px;
+
+    @media only screen and (min-width: 768px) {
+      margin-top: 48px;
+    }
 
     &__overline {
       color: $teal;
@@ -173,12 +212,23 @@ features section
       color: $black;
       font-weight: 900;
       margin-top: 24px;
+
+      @media only screen and (min-width: 768px) {
+        font-size: 40px;
+        line-height: 44px;
+        max-width: 445px;
+        margin-top: 16px;
+      }
     }
 
     &__paragraph {
       color: $gray;
       line-height: 26px;
       margin-top: 32px;
+
+      @media only screen and (min-width: 768px) {
+        max-width: 573px;
+      }
     }
   }
 }
@@ -188,10 +238,15 @@ footer section
 ----------------------------*/
 
 .footer {
-  margin-top: -2rem;
+  margin-top: -32px;
   background-image: linear-gradient($teal-transparent, $teal-transparent),
     url("../assets/mobile/image-footer.jpg");
   background-size: cover;
+
+  @media only screen and (min-width: 768px) {
+    background-image: linear-gradient($teal-transparent, $teal-transparent),
+    url("../assets/tablet/image-footer.jpg");
+  }
 
   &__container {
     display: flex;
@@ -200,25 +255,38 @@ footer section
     color: $white;
     text-align: center;
     padding: 92px 24px 72px;
+
+    @media only screen and (min-width: 768px) {
+      padding: 92px 98px 66px 97px;
+    }
   }
 
   &__heading {
     font-size: 32px;
     font-weight: 900;
     line-height: 36px;
+    
+    @media only screen and (min-width: 768px) {
+      font-size: 40px;
+      line-height: 44px;
+      max-width: 458px;
+    }
   }
 
   &__paragraph {
     font-size: 18px;
     line-height: 26px;
-    margin-top: 24px;
+    margin-top: 40px;
   }
 
   &__button {
     margin-top: 32px;
+    padding: 16px 40px;
+
 
     span {
       color: $light-purple;
+      margin-left: 4px;
     }
   }
 }
