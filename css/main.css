@@ -391,6 +391,12 @@ header {
   margin-top: 48px;
 }
 
+@media only screen and (min-width: 768px) {
+  header {
+    margin-top: 80px;
+  }
+}
+
 /*----------------------------
 hero section
 ----------------------------*/
@@ -418,8 +424,36 @@ hero section
   }
 }
 
+.hero__desktop-images {
+  display: none;
+}
+
 .hero img {
   max-width: 110.4%;
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero {
+    margin-top: 61px;
+  }
+  .hero__desktop-images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hero__desktop-image--left {
+    position: absolute;
+    top: 169px;
+    left: -32px;
+  }
+  .hero__desktop-image--right {
+    position: absolute;
+    top: 169px;
+    right: -32px;
+  }
+  .hero__mobile {
+    display: none;
+  }
 }
 
 .hero__text {
@@ -459,6 +493,14 @@ hero section
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  .hero__heading {
+    font-size: 64px;
+    line-height: 64px;
+    max-width: 445px;
+  }
+}
+
 .hero__paragraph {
   line-height: 26px;
   text-align: center;
@@ -470,6 +512,13 @@ hero section
   .hero__paragraph {
     max-width: 457px;
     margin-top: 24px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero__paragraph {
+    max-width: 540px;
+    margin-top: 34px;
   }
 }
 
@@ -494,6 +543,12 @@ hero section
         -ms-flex-direction: row;
             flex-direction: row;
     margin: 32px 0 80px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero__buttons {
+    margin: 32px 0 110px;
   }
 }
 
@@ -602,23 +657,35 @@ features section
 
 @media only screen and (min-width: 768px) {
   .features {
-    margin: 67px 40px 80px 39px;
+    margin: 67px 40px 80px 40px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .features {
+    margin: 64px 165px 72px;
   }
 }
 
 .features .gallery {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: (minmax(0, 225px))[2];
+      grid-template-columns: repeat(2, minmax(0, 225px));
   gap: 24px;
 }
 
 @media only screen and (min-width: 768px) {
   .features .gallery {
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: (minmax(0, 220px))[4];
+        grid-template-columns: repeat(4, minmax(0, 220px));
     gap: 11px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .features .gallery {
+    gap: 30px;
   }
 }
 
@@ -646,6 +713,12 @@ features section
 @media only screen and (min-width: 768px) {
   .features .text {
     margin-top: 48px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .features .text {
+    margin-top: 80px;
   }
 }
 
@@ -686,6 +759,13 @@ features section
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  .features .text__paragraph {
+    font-size: 18px;
+    max-width: 540px;
+  }
+}
+
 /*----------------------------
 footer section
 ----------------------------*/
@@ -700,6 +780,13 @@ footer section
   .footer {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(77, 150, 168, 0.9)), to(rgba(77, 150, 168, 0.9))), url("../assets/tablet/image-footer.jpg");
     background-image: linear-gradient(rgba(77, 150, 168, 0.9), rgba(77, 150, 168, 0.9)), url("../assets/tablet/image-footer.jpg");
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(77, 150, 168, 0.9)), to(rgba(77, 150, 168, 0.9))), url("../assets/desktop/image-footer.jpg");
+    background-image: linear-gradient(rgba(77, 150, 168, 0.9), rgba(77, 150, 168, 0.9)), url("../assets/desktop/image-footer.jpg");
   }
 }
 
@@ -725,6 +812,21 @@ footer section
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  .footer__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: start;
+    padding: 116px 165px 104px;
+    max-width: 1110px;
+  }
+}
+
 .footer__heading {
   font-size: 32px;
   font-weight: 900;
@@ -745,6 +847,13 @@ footer section
   margin-top: 40px;
 }
 
+@media only screen and (min-width: 1440px) {
+  .footer__paragraph {
+    margin: 0;
+    max-width: 350px;
+  }
+}
+
 .footer__button {
   margin-top: 32px;
   padding: 16px 40px;
@@ -753,4 +862,10 @@ footer section
 .footer__button span {
   color: #d9b8ff;
   margin-left: 4px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer__button {
+    margin: 0;
+  }
 }

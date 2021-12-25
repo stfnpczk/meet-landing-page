@@ -5,6 +5,10 @@ header {
   display: flex;
   justify-content: center;
   margin-top: 48px;
+
+  @media only screen and (min-width: 768px) {
+  margin-top: 80px;
+  }
 }
 
 /*----------------------------
@@ -24,9 +28,43 @@ hero section
     margin-top: 64px;
   }
 
+  &__desktop-images {
+    display: none;
+  }
+  
   & img {
     max-width: 110.4%;
   }
+
+
+  @media only screen and (min-width: 1440px) {
+
+    & {
+      margin-top: 61px;
+    }
+    
+    &__desktop-images {
+      display: flex;
+    }
+
+    &__desktop-image--left {
+      position: absolute;
+      top: 169px;
+      left: -32px;
+    }
+
+    &__desktop-image--right {
+      position: absolute;
+      top: 169px;
+      right: -32px;
+    }
+
+      &__mobile {
+        display: none;
+      }
+      
+  }
+
 
   &__text {
     display: flex;
@@ -37,6 +75,10 @@ hero section
     @media only screen and (min-width: 768px) {
       margin-top: 72px;
     }
+
+    // @media only screen and (min-width: 1440px) {
+    // max-width: 540px;
+    // }
   }
 
   &__heading {
@@ -52,6 +94,12 @@ hero section
       line-height: 48px;
       max-width: 339px;
     }
+
+    @media only screen and (min-width: 1440px) {
+      font-size: 64px;    
+      line-height: 64px;
+      max-width: 445px;
+    }
   }
 
   &__paragraph {
@@ -64,6 +112,12 @@ hero section
       max-width: 457px;
       margin-top: 24px;
     }
+
+    @media only screen and (min-width: 1440px) {
+      max-width: 540px;
+      margin-top: 34px;
+    }
+
   }
 
   &__buttons {
@@ -76,6 +130,11 @@ hero section
       flex-direction: row;
       margin: 32px 0 80px;
     }
+
+    @media only screen and (min-width: 1440px) {
+      margin: 32px 0 110px;
+    }
+
   }
 
   &__button {
@@ -165,18 +224,32 @@ features section
   margin: 64px 24px;
 
   @media only screen and (min-width: 768px) {
-    margin: 67px 40px 80px 39px; 
+    margin: 67px 40px 80px 40px; 
   }
+
+  @media only screen and (min-width: 1440px) {
+    margin: 64px 165px 72px
+  }
+
 
   .gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    // grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 225px));
+
     gap: 24px;
 
     @media only screen and (min-width: 768px) {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      // grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, minmax(0, 220px));
+      
       gap: 11px;
     }
+
+    @media only screen and (min-width: 1440px) {
+      gap: 30px;
+    }
+
 
     &__image {
       max-width: 100%;
@@ -198,12 +271,17 @@ features section
       margin-top: 48px;
     }
 
+  @media only screen and (min-width: 1440px) {
+    margin-top: 80px;
+  }
+
     &__overline {
       color: $teal;
       font-weight: 900;
       line-height: 26px;
       letter-spacing: 4px;
       text-transform: uppercase;
+      
     }
 
     &__heading {
@@ -219,6 +297,10 @@ features section
         max-width: 445px;
         margin-top: 16px;
       }
+
+      @media only screen and (min-width: 768px) {
+      
+      }
     }
 
     &__paragraph {
@@ -229,6 +311,12 @@ features section
       @media only screen and (min-width: 768px) {
         max-width: 573px;
       }
+
+      @media only screen and (min-width: 1440px) {
+        font-size: 18px;
+        max-width: 540px;
+      }
+
     }
   }
 }
@@ -248,6 +336,11 @@ footer section
     url("../assets/tablet/image-footer.jpg");
   }
 
+  @media only screen and (min-width: 1440px) {
+    background-image: linear-gradient($teal-transparent, $teal-transparent),
+    url("../assets/desktop/image-footer.jpg");
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -258,6 +351,14 @@ footer section
 
     @media only screen and (min-width: 768px) {
       padding: 92px 98px 66px 97px;
+    }
+
+    @media only screen and (min-width: 1440px) {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: start;
+      padding: 116px 165px 104px;
+      max-width: 1110px;
     }
   }
 
@@ -277,6 +378,12 @@ footer section
     font-size: 18px;
     line-height: 26px;
     margin-top: 40px;
+
+    @media only screen and (min-width: 1440px) {
+      margin: 0;
+      max-width: 350px;
+      // margin-left: 125px
+    }
   }
 
   &__button {
@@ -287,6 +394,10 @@ footer section
     span {
       color: $light-purple;
       margin-left: 4px;
+    }
+
+    @media only screen and (min-width: 1440px) {
+    margin:0;
     }
   }
 }
