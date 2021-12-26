@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -380,7 +379,7 @@ body {
 }
 
 /*----------------------------
- header section
+header section
 ----------------------------*/
 header {
   display: -webkit-box;
@@ -433,7 +432,7 @@ hero section
   max-width: 110.4%;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1250px) {
   .hero {
     margin-top: 61px;
   }
@@ -454,6 +453,36 @@ hero section
   }
   .hero__mobile {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .hero {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero img {
+    position: unset;
+  }
+  .hero__desktop-image--left {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .hero__text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .hero__desktop-image--right {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
 }
 
@@ -494,7 +523,7 @@ hero section
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1250px) {
   .hero__heading {
     font-size: 64px;
     line-height: 64px;
@@ -516,7 +545,7 @@ hero section
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1250px) {
   .hero__paragraph {
     max-width: 540px;
     margin-top: 34px;
@@ -547,14 +576,14 @@ hero section
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1250px) {
   .hero__buttons {
     margin: 32px 0 110px;
   }
 }
 
 .hero__button {
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   color: #fafafa;
   font-weight: 900;
   line-height: 26px;
@@ -662,7 +691,7 @@ features section
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1250px) {
   .features {
     margin: 64px 165px 72px;
   }
@@ -684,7 +713,7 @@ features section
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1250px) {
   .features .gallery {
     gap: 30px;
   }
@@ -717,7 +746,7 @@ features section
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1250px) {
   .features .text {
     margin-top: 80px;
   }
@@ -760,7 +789,7 @@ features section
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1250px) {
   .features .text__paragraph {
     font-size: 18px;
     max-width: 540px;
@@ -784,7 +813,7 @@ footer section
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1250px) {
   .footer {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(77, 150, 168, 0.9)), to(rgba(77, 150, 168, 0.9))), url("../assets/desktop/image-footer.jpg");
     background-image: linear-gradient(rgba(77, 150, 168, 0.9), rgba(77, 150, 168, 0.9)), url("../assets/desktop/image-footer.jpg");
@@ -813,7 +842,7 @@ footer section
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1250px) {
   .footer__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -823,7 +852,8 @@ footer section
         -ms-flex-pack: justify;
             justify-content: space-between;
     text-align: start;
-    padding: 116px 165px 104px;
+    padding: 7.25rem 2rem 6.5rem;
+    margin: 0 auto;
     max-width: 1110px;
   }
 }
@@ -848,7 +878,7 @@ footer section
   margin-top: 40px;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1250px) {
   .footer__paragraph {
     margin: 0;
     max-width: 350px;
@@ -865,7 +895,7 @@ footer section
   margin-left: 4px;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1250px) {
   .footer__button {
     margin: 0;
   }
