@@ -236,12 +236,16 @@ features section
     display: grid;
     // grid-template-columns: 1fr 1fr;
   grid-template-columns: repeat(2, minmax(0, 225px));
+  // grid-template-columns: minmax(0, 225px), minmax(0, 225px);
 
     gap: 24px;
 
     @media only screen and (min-width: 768px) {
       // grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-columns: repeat(4, minmax(0, 220px));
+  // grid-template-columns: minmax(0, 220px), minmax(0, 220px),minmax(0, 220px), minmax(0, 220px);
+  
+  // compiler issue with minmax() function in css file
       
       gap: 11px;
     }
