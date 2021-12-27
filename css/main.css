@@ -365,19 +365,6 @@ body {
   overflow-x: hidden;
 }
 
-.page-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.content {
-  width: 100%;
-}
-
 /*----------------------------
 header section
 ----------------------------*/
