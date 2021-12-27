@@ -45,13 +45,13 @@ Users should be able to:
 
 ### What I learned
 
-- `flexbox and position absolute` : Looking for a way to move items outside of the flex container, I tried to apply `position: absolute` on the right and left image.  
+- `flexbox and position absolute` : Looking for a way to move items outside of the flex container, I tried to apply position: absolute on the right and left image.  
 This unfortunately only kind of worked, since the images are taken out of the flex flow.
 
 ```scss
  &__desktop-images {
       display: flex;
-    }
+ }
 
     &__desktop-image--left {
       position: absolute;
@@ -94,7 +94,7 @@ This unfortunately only kind of worked, since the images are taken out of the fl
 
 
 - [Flexbox and absolute positioning --> CSS-Tricks ](https://css-tricks.com/flexbox-and-absolute-positioning/) 
-- [ minmax() --> MDN docs](hhttps://developer.mozilla.org/en-US/docs/Web/CSS/minmax()) 
+- [ minmax() --> MDN docs](https://developer.mozilla.org/en-US/docs/Web/CSS/minmax()) 
 - [Background-image overlayed with background-color in footer --> Stack Overflow question](https://stackoverflow.com/questions/34173169/background-image-overlayed-with-background-color-in-footer)
 
 ## Author
