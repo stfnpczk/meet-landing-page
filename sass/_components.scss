@@ -4,10 +4,10 @@ header section
 header {
   display: flex;
   justify-content: center;
-  margin-top: 48px;
+  margin-top: 3rem;
 
   @media only screen and (min-width: 768px) {
-    margin-top: 80px;
+    margin-top: 5rem;
   }
 }
 
@@ -22,10 +22,10 @@ hero section
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
-  margin-top: 54px;
+  margin-top: 3.375rem;
 
   @media only screen and (min-width: 768px) {
-    margin-top: 64px;
+    margin-top: 4rem;
   }
 
   &__desktop-images {
@@ -38,7 +38,7 @@ hero section
 
   @media only screen and (min-width: 1250px) {
     & {
-      margin-top: 61px;
+      margin-top: 3.8125rem;
     }
 
     &__desktop-images {
@@ -47,14 +47,14 @@ hero section
 
     &__desktop-image--left {
       position: absolute;
-      top: 169px;
-      left: -32px;
+      top: 10.5625rem;
+      left: -2rem;
     }
 
     &__desktop-image--right {
       position: absolute;
-      top: 169px;
-      right: -32px;
+      top: 10.5625rem;
+      right: -2rem;
     }
 
     &__mobile {
@@ -86,49 +86,49 @@ hero section
   &__text {
     display: flex;
     flex-direction: column;
-    margin: 48px 24px 0 24px;
+    margin: 3rem 1.5rem 0 1.5rem;
     align-items: center;
 
     @media only screen and (min-width: 768px) {
-      margin-top: 72px;
+      margin-top: 4.5rem;
     }
   }
 
   &__heading {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 900;
-    line-height: 44px;
+    line-height: 2.75rem;
     text-align: center;
     color: $black;
-    max-width: 290px;
+    max-width: 18.125rem;
 
     @media only screen and (min-width: 768px) {
-      font-size: 48px;
-      line-height: 48px;
-      max-width: 339px;
+      font-size: 3rem;
+      line-height: 3rem;
+      max-width: 21.1875rem;
     }
 
     @media only screen and (min-width: 1250px) {
-      font-size: 64px;
-      line-height: 64px;
-      max-width: 445px;
+      font-size: 4rem;
+      line-height: 4rem;
+      max-width: 27.8125rem;
     }
   }
 
   &__paragraph {
-    line-height: 26px;
+    line-height: 1.625rem;
     text-align: center;
-    margin-top: 24px;
+    margin-top: 1.5rem;
     color: $gray;
 
     @media only screen and (min-width: 768px) {
-      max-width: 457px;
-      margin-top: 24px;
+      max-width: 28.5625rem;
+      margin-top: 1.5rem;
     }
 
     @media only screen and (min-width: 1250px) {
-      max-width: 540px;
-      margin-top: 34px;
+      max-width: 33.75rem;
+      margin-top: 2.125rem;
     }
   }
 
@@ -136,15 +136,15 @@ hero section
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 32px 0 64px;
+    margin: 2rem 0 4rem;
 
     @media only screen and (min-width: 768px) {
       flex-direction: row;
-      margin: 32px 0 80px;
+      margin: 2rem 0 5rem;
     }
 
     @media only screen and (min-width: 1250px) {
-      margin: 32px 0 110px;
+      margin: 2rem 0 6.875rem;
     }
   }
 
@@ -152,8 +152,8 @@ hero section
     font-family: "Red Hat Display", sans-serif;
     color: $white;
     font-weight: 900;
-    line-height: 26px;
-    border-radius: 29px;
+    line-height: 1.625rem;
+    border-radius: 1.8125rem;
     border: none;
     cursor: pointer;
     text-align: center;
@@ -161,25 +161,25 @@ hero section
 
   &__button--download {
     background-color: $teal;
-    padding: 17px 40px 15px;
-    margin-bottom: 17px;
+    padding: 1.0625rem 2.5rem 0.9375rem;
+    margin-bottom: 1.0625rem;
 
     span {
       color: $cyan;
-      padding-left: 4px;
+      padding-left: 0.25rem;
     }
 
     &:hover {
       background-color: hsla(192, 54%, 64%, 1);
     }
     @media only screen and (min-width: 768px) {
-      margin: 0 16px 0 0;
+      margin: 0 1rem 0 0;
     }
   }
 
   &__button--what-is-it {
     background-color: $dark-purple;
-    padding: 16px 29px;
+    padding: 1rem 1.8125rem;
 
     &:hover {
       background-color: hsla(267, 54%, 71%, 1);
@@ -196,8 +196,8 @@ transiton section
   align-items: center;
 
   &__line {
-    width: 1px;
-    height: 84px;
+    width: 0.0625rem;
+    height: 5.25rem;
     background-color: hsla(240, 10%, 57%, 0.25);
     // opacity: 0.25;
   }
@@ -206,16 +206,16 @@ transiton section
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid hsla(240, 10%, 57%, 0.25);
-    width: 56px;
-    height: 56px;
-    border-radius: 29px;
+    border: 0.0625rem solid hsla(240, 10%, 57%, 0.25);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 1.8125rem;
     background-color: white;
   }
 
   &__number {
     font-weight: 900;
-    line-height: 26px;
+    line-height: 1.625rem;
     color: $gray;
   }
 }
@@ -228,40 +228,40 @@ features section
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 64px 24px;
+  margin: 4rem 1.5rem;
 
   @media only screen and (min-width: 768px) {
-    margin: 67px 40px 80px 40px;
+    margin: 4.1875rem 2.5rem 5rem 2.5rem;
   }
 
   @media only screen and (min-width: 1250px) {
-    margin: 64px 165px 72px;
+    margin: 4rem 10.3125rem 4.5rem;
   }
 
   .gallery {
     display: grid;
     // grid-template-columns: 1fr 1fr;
-    grid-template-columns: repeat(2, minmax(0, 225px));
-    // grid-template-columns: minmax(0, 225px), minmax(0, 225px);
+    grid-template-columns: repeat(2, minmax(0, 14.0625rem));
+    // grid-template-columns: minmax(0, 14.0625rem), minmax(0, 14.0625rem);
 
-    gap: 24px;
+    gap: 1.5rem;
 
     @media only screen and (min-width: 768px) {
       // grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: repeat(4, minmax(0, 220px));
-      // grid-template-columns: minmax(0, 220px), minmax(0, 220px),minmax(0, 220px), minmax(0, 220px);
+      grid-template-columns: repeat(4, minmax(0, 13.75rem));
+      // grid-template-columns: minmax(0, 13.75rem), minmax(0, 13.75rem),minmax(0, 13.75rem), minmax(0, 13.75rem);
       // compiler issue with minmax() function in css file
-      gap: 11px;
+      gap: 0.6875rem;
     }
 
     @media only screen and (min-width: 1250px) {
-      gap: 30px;
+      gap: 1.875rem;
     }
 
     &__image {
       max-width: 100%;
       max-height: 100%;
-      border-radius: 16px;
+      border-radius: 1rem;
     }
   }
 
@@ -270,36 +270,36 @@ features section
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 64px;
+    margin-top: 4rem;
 
     @media only screen and (min-width: 768px) {
-      margin-top: 48px;
+      margin-top: 3rem;
     }
 
     @media only screen and (min-width: 1250px) {
-      margin-top: 80px;
+      margin-top: 5rem;
     }
 
     &__overline {
       color: $teal;
       font-weight: 900;
-      line-height: 26px;
-      letter-spacing: 4px;
+      line-height: 1.625rem;
+      letter-spacing: 0.25rem;
       text-transform: uppercase;
     }
 
     &__heading {
-      font-size: 32px;
-      line-height: 36px;
+      font-size: 2rem;
+      line-height: 2.25rem;
       color: $black;
       font-weight: 900;
-      margin-top: 24px;
+      margin-top: 1.5rem;
 
       @media only screen and (min-width: 768px) {
-        font-size: 40px;
-        line-height: 44px;
-        max-width: 445px;
-        margin-top: 16px;
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+        max-width: 27.8125rem;
+        margin-top: 1rem;
       }
 
       @media only screen and (min-width: 768px) {
@@ -308,16 +308,16 @@ features section
 
     &__paragraph {
       color: $gray;
-      line-height: 26px;
-      margin-top: 32px;
+      line-height: 1.625rem;
+      margin-top: 2rem;
 
       @media only screen and (min-width: 768px) {
-        max-width: 573px;
+        max-width: 35.8125rem;
       }
 
       @media only screen and (min-width: 1250px) {
-        font-size: 18px;
-        max-width: 540px;
+        font-size: 1.125rem;
+        max-width: 33.75rem;
       }
     }
   }
@@ -328,7 +328,7 @@ footer section
 ----------------------------*/
 
 .footer {
-  margin-top: -32px;
+  margin-top: -2rem;
   background-image: linear-gradient($teal-transparent, $teal-transparent),
     url("../assets/mobile/image-footer.jpg");
   background-size: cover;
@@ -349,55 +349,55 @@ footer section
     align-items: center;
     color: $white;
     text-align: center;
-    padding: 92px 24px 72px;
+    padding: 5.75rem 1.5rem 4.5rem;
 
     @media only screen and (min-width: 768px) {
-      padding: 92px 98px 66px 97px;
+      padding: 5.75rem 6.125rem 4.125rem 6.0625rem;
     }
 
     @media only screen and (min-width: 1250px) {
       flex-direction: row;
       justify-content: space-between;
       text-align: start;
-      // padding: 116px 165px 104px;
+      // padding: 7.25rem 10.3125rem 6.5rem;
       padding: 7.25rem 2rem 6.5rem;
       margin: 0 auto;
-      max-width: 1110px;
+      max-width: 69.375rem;
     }
   }
 
   &__heading {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 900;
-    line-height: 36px;
+    line-height: 2.25rem;
 
     @media only screen and (min-width: 768px) {
-      font-size: 40px;
-      line-height: 44px;
-      max-width: 458px;
+      font-size: 2.5rem;
+      line-height: 2.75rem;
+      max-width: 28.625rem;
     }
   }
 
   &__paragraph {
-    font-size: 18px;
-    line-height: 26px;
-    margin-top: 40px;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    margin-top: 2.5rem;
 
     @media only screen and (min-width: 1250px) {
       margin: 0;
-      max-width: 350px;
-      // margin-left: 125px
+      max-width: 21.875rem;
+      // margin-left: 7.8125rem
     }
   }
 
   &__button {
-    margin-top: 32px;
-    padding: 16px 40px;
-    // margin-left: 92px;
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+    // margin-left: 5.75rem;
 
     span {
       color: $light-purple;
-      margin-left: 4px;
+      margin-left: 0.25rem;
     }
 
     @media only screen and (min-width: 1250px) {
