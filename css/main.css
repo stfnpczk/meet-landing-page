@@ -361,8 +361,15 @@ textarea {
 
 body {
   font-family: "Red Hat Display", sans-serif;
-  font-weight: medium;
+  font-weight: 500;
   overflow-x: hidden;
+}
+
+@media only screen and (min-width: 1600px) {
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
 
 /*----------------------------
@@ -387,6 +394,10 @@ header {
 /*----------------------------
 hero section
 ----------------------------*/
+main {
+  position: relative;
+}
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -427,6 +438,7 @@ hero section
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: absolute;
   }
   .hero__desktop-image--left {
     position: absolute;
@@ -440,36 +452,6 @@ hero section
   }
   .hero__mobile {
     display: none;
-  }
-}
-
-@media only screen and (min-width: 1500px) {
-  .hero {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .hero img {
-    position: unset;
-  }
-  .hero__desktop-image--left {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  .hero__text {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .hero__desktop-image--right {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
   }
 }
 

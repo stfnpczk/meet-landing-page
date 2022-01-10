@@ -1,3 +1,12 @@
+// layout
+
+@media only screen and (min-width: 1600px) {
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
 /*----------------------------
 header section
 ----------------------------*/
@@ -14,6 +23,10 @@ header {
 /*----------------------------
 hero section
 ----------------------------*/
+
+main {
+  position: relative;
+}
 
 .hero {
   // background-color: yellow;
@@ -43,6 +56,7 @@ hero section
 
     &__desktop-images {
       display: flex;
+      position: absolute;
     }
 
     &__desktop-image--left {
@@ -59,27 +73,6 @@ hero section
 
     &__mobile {
       display: none;
-    }
-  }
-
-  @media only screen and (min-width: 1500px) {
-    & img {
-      position: unset;
-    }
-
-    flex-direction: row;
-    justify-content: center;
-
-    &__desktop-image--left {
-      order: 1;
-    }
-
-    &__text {
-      order: 2;
-    }
-
-    &__desktop-image--right {
-      order: 3;
     }
   }
 
@@ -301,9 +294,6 @@ features section
         max-width: 27.8125rem;
         margin-top: 1rem;
       }
-
-      @media only screen and (min-width: 768px) {
-      }
     }
 
     &__paragraph {
@@ -359,7 +349,6 @@ footer section
       flex-direction: row;
       justify-content: space-between;
       text-align: start;
-      // padding: 7.25rem 10.3125rem 6.5rem;
       padding: 7.25rem 2rem 6.5rem;
       margin: 0 auto;
       max-width: 69.375rem;
@@ -386,14 +375,12 @@ footer section
     @media only screen and (min-width: 1250px) {
       margin: 0;
       max-width: 21.875rem;
-      // margin-left: 7.8125rem
     }
   }
 
   &__button {
     margin-top: 2rem;
     padding: 1rem 2.5rem;
-    // margin-left: 5.75rem;
 
     span {
       color: $light-purple;
